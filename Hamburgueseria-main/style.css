@@ -368,6 +368,83 @@ nav a:hover{
     font-size: 15px;
 }
 
+/*---------------------LOGIN----------------------------*/
+#contenedor-login {
+    background-color: #000000;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(233, 218, 1);
+    text-align: center;
+    width: 60%;
+    height: 50%;
+    
+}
+
+#contenedor-login h1 {
+    letter-spacing: 2.5px;
+    color: #ffcc00;
+    margin-bottom: 35px;
+}
+
+#contenedor-login label {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+#contenedor-login input[type="text"],
+#contenedor-login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin:5px 0px 60px 0px ;
+    background-color: #000000;
+    color: #ffcc00;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contenedor-login input[type="text"]:hover,
+#contenedor-login input[type="password"]:hover {
+    box-shadow: 0px 0px 10px 0px rgb(245, 246, 240);
+}
+
+#contenedor-login input[type="submit"] {
+    background-color: #ffcc00;
+    border: none;
+    letter-spacing: 1.5px;
+    color: #000000;
+    padding: 10px 20px;
+    margin-top: 0px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contenedor-login input[type="submit"]:hover {
+    background-color: #ffdb4d;
+    box-shadow: 0px 4px 20px rgb(191, 196, 44);
+}
+
+#contenedor-login .registrarse {
+    margin-top: 25px;
+    color: #ffffff;
+}
+
+#contenedor-login .registrarse a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contenedor-login .registrarse a:hover {
+    text-shadow: 0px 0px 20px rgba(255, 255, 0, 1);
+}
+
+
 /* ############### <!-- Media Query (768px) --> ############### */
 @media screen and (max-width: 768px){
     header{
