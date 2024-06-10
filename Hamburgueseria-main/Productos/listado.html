@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="listado.css">
+    <title>Listado</title>
+</head>
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="../img/1706.png" alt="">
+                    </div>
+
+                    <div class="link">
+                        <a href="1706.html" target="_top">1706</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="../img/Argenta.png" alt="">
+                    </div>
+
+                    <div class="link">
+                        <a href="argenta.html" target="_top">Argenta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="../img/Beto's.png" alt="">
+                    </div>
+
+                    <div class="link">
+                        <a href="Beto's.html" target="_top">Beto's</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="../img/Cheddar-Boom.png" alt="">
+                    </div>
+
+                    <div class="link">
+                        <a href="cheddar-boom.html" target="_top">Cheddar Boom</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="../img/Doble-con-panceta.png" alt="">
+                    </div>
+
+                    <div class="link">
+                        <a href="doble-panceta.html" target="_top">Doble con Panceta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="../img/Martin's.png" alt="">
+                    </div>
+
+                    <div class="link">
+                        <a href="martin's.html" target="_top">Martin's</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            coverflowEffect: {
+                depth: 500,
+                modifer: 1,
+                slidesShadows: true,
+                rotate: 0,
+                stretch: 0
+            }
+        })
+    </script>
+</body>
+</html>

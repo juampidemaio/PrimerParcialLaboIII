@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kalam:wght@300;400;700&display=swap');
+
+body{
+    margin: 0;
+    background-color: #E9D331;
+}
+
+html{
+    scroll-behavior: smooth; /* Desplazamiento suabe */
+}
+
+/* ############ <!-- Encabezado --> ############### */
+header{
+    display: flex;
+    min-height: 100px;
+    background-image: url(img/fondo-header.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Asegura que el header este por encima de todo */
+}
+
+a{
+    text-decoration: none; /* Saca el subrallado de los "a" */
+    color: white;
+}
+
+.container-burger1706{
+    display: grid;
+    height: 110px;
+    margin-left: 20px;
+    grid-template-rows: 18% 90%; /* Define el tamaño y la distribucion de las filas en un grid (1era fila ocupara el 18% de la altura y la 2da el 90%)*/
+}
+
+.container-burger1706 h2{
+    order: 2; /* Controla el orden de aparicion de elementos dentro de un contenedor grid o flexbox (Este saldra segundo) */
+    text-align: end;
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    margin: 0;
+}
+
+.container-burger1706 h4{
+    order: 1; /* Controla el orden de aparicion de elementos dentro de un contenedor grid o flexbox (Este saldra primero) */
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    text-align: end;
+    color: #E9D331;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-img{
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+nav a{
+    font-weight: 600; /* Negritas */
+    padding-right: 60px;
+}
+
+nav a:hover{
+    color: #E9D331;
+}
+
+/* ############### <!-- Imagen de fondo --> ############### */
+.fondo{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    /* padding: 20px; */
+}
+
+/* align-items: stretch; Estira los elementos hijos para que ocupen todo el alto disponible */
+.hamburguesa-1, .hamburguesa-2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
+    width: 100%;
+    margin: 30px;
+    box-sizing: border-box; /* Controla como se calcula el tamaño total de un elemento */
+}
+
+.hamburguesa-2{
+    background-image: url(img/fondoRoto.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.H-1706, .contenido-1, .H-Betos, .contenido-2{
+    flex: 1; /* Asigna la misma proporción a ambos contenedores */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.H-1706, .H-Betos{
+    position: relative; /* Ajusta la posicion en relacion con su posicion orignial */
+}
+
+.H-1706 img, .H-Betos img{
+    max-width: 70%;
+    height: auto;
+    border-radius: 50%;
+    border: 15px solid white;
+    transition: transform 1s ease; /* Agrega una rotacion suave para la rotacion */
+    backface-visibility: hidden; /* Oculta el lado trasero del elemento cuando este rota */
+}
+
+.H-1706:hover img, .H-Betos:hover img{
+    transform: rotateY(180deg);
+}
+
+.H-1706 p, .H-Betos p, .H-1706 a, .H-Betos a{
+    position: absolute; /* Posiciona en relacion con un ancestro posicionado */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Despalza el elemento hacia arriba y hacia la izquierda en relacion de su posicion original */
+    font-weight: bold; /* Hace que el texto sea mas grueso y negrita */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.H-1706:hover p, .H-Betos:hover p, .H-1706:hover a, .H-Betos:hover a{
+    opacity: 1;
+}
+
+.H-1706 p, .H-Betos p{
+    font-size: 50px;
+    top: 30%;
+    font-family: "Oswald", sans-serif;
+}
+
+.H-Betos p{
+    color: #fff;
+}
+
+.H-1706 a, .H-Betos a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    bottom: 20%;
+    padding: 10px;
+    border-radius: 40px;
+    font-family: "Oswald", sans-serif;
+}
+
+.H-1706 a{
+    background-color: #000;
+}
+
+.H-Betos a{
+    background-color: #E9D331;
+}
+
+.contenido-1, .contenido-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contenido-1 h2, .contenido-2 h2{
+    margin-top: 120px;
+    font-size: 60px;
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    margin-bottom: 40px;
+}
+
+.contenido-1 p, .contenido-2 p{
+    font-size: 20px;
+    width: 60%;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+}
+
+.contenido-2 h2, .contenido-2 p{
+    color: #fff;
+}
+
+/* ############### <!-- Extras --> ############### */
+.aperitivos-extras{
+    text-align: center;
+}
+
+.aperitivos-extras img{
+    width: 25%;
+    height: auto;
+}
+
+
+/* ############### <!-- Aperitivos Extras --> ############### */
+.aperitivos{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.aperitivos-1, .aperitivos-2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.papas-fritas img, .papas-cheddar img, .coca-cola img, .sprite img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* La imagen se redimenciona para mantener su relacion de aspecto mientras llena el cuadro de contenido completo del elemento */
+    max-height: 400px;
+}
+
+.aperitivos-1 h2, .aperitivos-2 h2{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Oswald", sans-serif;
+}
+
+/* ############### <!-- Sucursal --> ############### */
+.sucursal{
+    text-align: center;
+}
+
+.sucursal img{
+    width: 44%;
+    height: auto;
+}
+
+/* ############### <!-- Sucursales --> ############### */
+.sucursales{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.ubicaciones, .mapas{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.ubicacion-1, .ubicacion-2, .ubicacion-3, .mapa-1, .mapa-2, .mapa-3{
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.ubicacion-1 h3, .ubicacion-2 h3, .ubicacion-3 h3{
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+}
+
+.ubicacion-1 p, .ubicacion-2 p, .ubicacion-3 p{
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+.mapa-1 iframe, .mapa-2 iframe, .mapa-3 iframe{
+    width: 80%;
+    height: 300px;
+    border: 2px solid black;
+}
+
+/* ############### <!-- Final de Presentacion --> ############### */
+.fin-presentacion{
+    background-color: black;
+    background-image: url(img/meta.png);
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100%;
+    height: 50px;
+}
+
+/* ############### <!-- Pie de pagina --> ############### */
+.pie-de-pagina{
+    width: 100%;
+    background-color: black;
+}
+
+.grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.caja{
+    display: grid;
+    place-items: center; /* Centra horizontal y verticalmente */
+}
+
+.caja img{
+    width: 150px;
+}
+
+.caja h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.caja p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.red-social a{
+    display: flex;
+    text-decoration: none;
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    background-color: #0d200d;
+    text-align: center;
+    justify-content: space-evenly;
+    transition: all 300ms ease;
+}
+
+.red-social a:hover{
+    color: aqua;
+}
+
+.grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.grupo-2 small{
+    font-size: 15px;
+}
+
+/* ############### <!-- Media Query (768px) --> ############### */
+@media screen and (max-width: 768px){
+    header{
+        flex-direction: column;
+    }
+
+    .logo-img{
+        height: 80px;
+        margin-left: 0px;
+    }
+
+    .container-burger1706{
+        height: 100px;
+        grid-template-rows: 30% 90%;
+    }
+
+    .container-burger1706 h2{
+        font-weight: 800;
+        font-size: 40px;
+    }
+
+    .container-burger1706 h4{
+        font-size: 15px;   
+    }
+
+    nav{
+        padding: 10px 0px;
+        padding-left: 60px;
+    }
+
+    .nav-link{
+        font-size: 12px;
+    }
+
+    .hamburguesa-1, .hamburguesa-2{
+        flex-direction: row;
+    }
+
+    .H-1706, .contenido-1, .H-Betos, .contenido-2{
+        width: auto;
+        height: auto;
+    }
+
+    .H-1706 img, .H-Betos img{
+        border: 10px solid white;;
+    }
+
+    .H-1706 p, .H-Betos p{
+        font-size: 25px;
+        top: 25%;
+    }
+    
+    .H-1706 a, .H-Betos a{
+        font-size: 12px;
+        bottom: 16%;
+        padding: 8px;
+        border-radius: 40px;
+        font-family: "Oswald", sans-serif;
+    }
+
+    .contenido-1 h2, .contenido-2 h2{
+        margin-top: 14px;
+        font-size: 30px;
+        font-family: "Big Shoulders Stencil Text", sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .contenido-1 p, .contenido-2 p{
+        font-size: 20px;
+        width: 80%;
+        font-weight: 400;
+        font-family: "Oswald", sans-serif;
+    }
+
+    .aperitivos{
+        flex-direction: row;
+    }
+
+    .papas-fritas img, .papas-cheddar img, .coca-cola img, .sprite img{
+        max-height: 200px;
+    }
+
+    .aperitivos-1 h2, .aperitivos-2 h2{
+        font-size: 20px;
+        font-family: "Oswald", sans-serif;
+    }
+
+    .sucursales{
+        margin: 10px;
+    }
+
+    .ubicaciones, .mapas{
+        margin: 0px;
+    }
+
+    .ubicacion-1 h3, .ubicacion-2 h3, .ubicacion-3 h3{
+        font-size: 20px;
+    }
+
+    .ubicacion-1 p, .ubicacion-2 p, .ubicacion-3 p{
+        font-size: 15px;
+    }
+
+    .mapa-1 iframe, .mapa-2 iframe, .mapa-3 iframe{
+        width: 100%;
+        height: 150px;
+    }
+
+    .fin-presentacion{
+        height: 30px;
+    }
+
+    .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .caja img{
+        width: 100px;
+    }
+
+    .caja h2{
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .red-social a{
+        font-size: 12px;
+        width: 150px;
+    }
+}
+
+/* ############### <!-- Media Query (480px) --> ############### */
+@media screen and (max-width: 480px){
+    nav{
+        padding: 10px 0px;
+        padding-left: 20px;
+    }
+
+    .logo-img{
+        height: 60px;
+        margin-left: 0px;
+    }
+
+    .container-burger1706{
+        height: 60px;
+        grid-template-rows: 30% 90%;
+    }
+
+    .container-burger1706 h2{
+        font-weight: 800;
+        font-size: 25px;
+    }
+
+    .container-burger1706 h4{
+        font-size: 11px;   
+    }
+
+    .nav-link{
+        font-size: 10px;
+        padding-right: 40px;
+    }
+
+    .hamburguesa-1, .hamburguesa-2{
+        margin: 8px;
+    }
+
+    .H-1706, .contenido-1, .H-Betos, .contenido-2{
+        width: auto;
+        height: auto;
+    }
+
+    .H-1706 img, .H-Betos img{
+        border: 6px solid white;
+    }
+
+    .H-1706 p, .H-Betos p{
+        font-size: 15px;
+        top: 20%;
+    }
+    
+    .H-1706 a, .H-Betos a{
+        font-size: 8px;
+        bottom: 14%;
+        padding: 5px;
+        border-radius: 40px;
+        font-family: "Oswald", sans-serif;
+    }
+
+    .contenido-1 h2, .contenido-2 h2{
+        margin-top: 16px;
+        font-size: 16px;
+        font-family: "Big Shoulders Stencil Text", sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .contenido-1 p, .contenido-2 p{
+        font-size: 8px;
+        width: 80%;
+        font-weight: 400;
+        font-family: "Oswald", sans-serif;
+    }
+
+    .papas-fritas img, .papas-cheddar img, .coca-cola img, .sprite img{
+        max-height: 150px;
+    }
+
+    .aperitivos-1 h2, .aperitivos-2 h2{
+        font-size: 10px;
+        font-family: "Oswald", sans-serif;
+    }
+
+    .sucursales{
+        margin: 10px;
+    }
+
+    .ubicaciones,.mapas{
+        margin: 0;
+    }
+
+    .ubicacion-1 h3, .ubicacion-2 h3, .ubicacion-3 h3{
+        font-size: 15px;
+    }
+
+    .ubicacion-1 p, .ubicacion-2 p, .ubicacion-3 p{
+        font-size: 13px;
+    }
+
+    .mapa-1 iframe, .mapa-2 iframe, .mapa-3 iframe{
+        width: 100%;
+        height: 80px;
+        border: 1px solid black;
+    }
+
+    .fin-presentacion{
+        height: 15px;
+    }
+
+    .grupo-1{
+        width: 70%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        padding: 15px 0px;
+    }
+
+    .caja img{
+        width: 80px;
+    }
+
+    .caja h2{
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .caja p{
+        font-size: 12px;
+    }
+
+    .grupo-2 small{
+        font-size: 10px;
+    }
+
+    .red-social a{
+        font-size: 10px;
+        width: 120px;
+        height: 35px;
+        line-height: 35px;
+    }
+}

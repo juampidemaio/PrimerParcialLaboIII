@@ -1,0 +1,94 @@
+html, body{
+    position: relative;
+    width: 100%;
+}
+
+body{
+    background-color: #E9D331;
+    font-family: Helvetica Neue, Helvetica;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper{
+    width: 100%;
+    padding: 50px 0 50px 0;
+}
+
+.swiper-slide{
+    width: 300px;
+    height: 300px;
+    background-color: #323232;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.imagen-producto{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.imagen-producto img{
+    margin-top: 10px;
+    width: 60%;
+    border-radius: 50%;
+}
+
+.link{
+    display: inline-block;
+    padding: 13px 55px;
+    border: 1px solid #ffb900;
+    border-radius: 25px;
+    margin-top: 35px;
+}
+
+.link a{
+    color: #ffb900;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper{
+        padding: 14px;
+    }
+
+    .swiper-slide{
+        width: 250px;
+        height: 250px;
+    }
+
+    .imagen-producto img{
+        margin-top: 10px;
+    }
+
+    .link{
+        margin-top: 25px;
+        padding: 10px 45px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .swiper{
+        padding: 10px;
+    }
+
+    .swiper-slide{
+        width: 160px;
+        height: 160px;
+    }
+
+    .imagen-producto img{
+        margin-top: 10px;
+    }
+
+    .link{
+        margin-top: 10px;
+        padding: 4px 22px;
+    }
+
+    .link a{
+        font-size: 10px;
+    }
+}
