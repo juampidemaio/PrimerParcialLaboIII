@@ -368,7 +368,18 @@ nav a:hover{
     font-size: 15px;
 }
 
-/*---------------------LOGIN----------------------------*/
+/*--------------------------------#LOGIN---------------------------*/
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
 #contenedor-login {
     background-color: #000000;
     border: 2px solid #ffcc00;
@@ -397,7 +408,7 @@ nav a:hover{
 #contenedor-login input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin:5px 0px 60px 0px ;
+    margin:5px 0px 50px 0px ;
     background-color: #000000;
     color: #ffcc00;
     border: none;
@@ -417,7 +428,6 @@ nav a:hover{
     letter-spacing: 1.5px;
     color: #000000;
     padding: 10px 20px;
-    margin-top: 0px;
     font-size: 1em;
     font-weight: bold;
     border-radius: 5px;
@@ -429,18 +439,23 @@ nav a:hover{
     box-shadow: 0px 4px 20px rgb(191, 196, 44);
 }
 
+#contenedor-login .olvido-contraseña {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
 #contenedor-login .registrarse {
     margin-top: 25px;
     color: #ffffff;
 }
 
-#contenedor-login .registrarse a {
+#contenedor-login .registrarse a, #contenedor-login .olvido-contraseña a{
     color: #ffcc00;
     text-decoration: none;
     font-weight: bold;
 }
 
-#contenedor-login .registrarse a:hover {
+#contenedor-login .registrarse a,#contenedor-login .olvido-contraseña a:hover{
     text-shadow: 0px 0px 20px rgba(255, 255, 0, 1);
 }
 
