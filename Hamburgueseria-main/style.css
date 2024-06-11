@@ -389,8 +389,7 @@ nav a:hover{
     box-shadow: 0 0 10px rgb(233, 218, 1);
     text-align: center;
     width: 60%;
-    height: 50%;
-    
+    height: 50%;    
 }
 
 #contenedor-login h1 {
@@ -592,6 +591,37 @@ nav a:hover{
         font-size: 12px;
         width: 150px;
     }
+
+    #contenedor-login {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+    }
+
+    #contenedor-login h1 {
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+
+    #contenedor-login label {
+        font-size: 1em;
+    }
+
+    #contenedor-login input[type="text"],
+    #contenedor-login input[type="password"] {
+        padding: 8px;
+        margin: 5px 0px 30px 0px;
+    }
+
+    #contenedor-login input[type="submit"] {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    #contenedor-login .olvido-contraseña,
+    #contenedor-login .registrarse {
+        font-size: 0.9em;
+    }
 }
 
 /* ############### <!-- Media Query (480px) --> ############### */
@@ -729,5 +759,37 @@ nav a:hover{
         width: 120px;
         height: 35px;
         line-height: 35px;
+    }
+
+
+    #contenedor-login {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    #contenedor-login h1 {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    #contenedor-login label {
+        font-size: 0.9em;
+    }
+
+    #contenedor-login input[type="text"],
+    #contenedor-login input[type="password"] {
+        padding: 5px;
+        margin: 5px 0px 20px 0px;
+    }
+
+    #contenedor-login input[type="submit"] {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+
+    #contenedor-login .olvido-contraseña,
+    #contenedor-login .registrarse {
+        font-size: 0.8em;
     }
 }
