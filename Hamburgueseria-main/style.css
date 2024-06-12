@@ -458,6 +458,13 @@ nav a:hover{
     text-shadow: 0px 0px 20px rgba(255, 255, 0, 1);
 }
 
+/* ############### <!-- Media Query (1005px) --> ############### */
+@media screen and (max-width: 1005px)
+{
+    header{
+        flex-direction: column;
+    }
+}
 
 /* ############### <!-- Media Query (768px) --> ############### */
 @media screen and (max-width: 768px){
@@ -624,8 +631,8 @@ nav a:hover{
     }
 }
 
-/* ############### <!-- Media Query (480px) --> ############### */
-@media screen and (max-width: 480px){
+/* ############### <!-- Media Query (653px) --> ############### */
+@media screen and (max-width: 653px){
     nav{
         padding: 10px 0px;
         padding-left: 20px;
@@ -792,4 +799,44 @@ nav a:hover{
     #contenedor-login .registrarse {
         font-size: 0.8em;
     }
+}
+
+/* ############### <!-- Media Query (468px) --> ############### */
+@media screen and (max-width: 468px){
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo-img {
+        height: 60px;
+    }
+
+    .container-burger1706 h2 {
+        font-size: 25px;
+    }
+
+    .container-burger1706 h4 {
+        font-size: 11px;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        width: 100%;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 8px 0;
+        
+    }
+
 }

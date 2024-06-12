@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/f4a159c617.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
-    <title>Listado</title>
+    <script src="https://kit.fontawesome.com/f4a159c617.js" crossorigin="anonymous"></script>
+    <title>Burguer 1706</title>
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
-        <a href="../index.html" class="logo">
+        <a href="#" class="logo">
             <img class="logo-img" src="../img/logo.png" alt="logo de la compañia">
 
             <div class="container-burger1706">
@@ -19,44 +21,50 @@
         </a>
         <nav>
             <a href="../index.html" class="nav-link">HOME</a>
-            <a href="#" class="nav-link">PRODUCTOS</a>
+            <a href="../Productos/1706.html" class="nav-link">PRODUCTOS</a>
             <a href="../Carrito/index.html" class="nav-link">CARRITO</a>
             <a href="#contactos" class="nav-link">CONTACTOS</a>
-            <a href="../iniciar/iniciarSesion.html" class="nav-link">INICIAR SESION</a>
+            <a href="iniciarSesion.html" class="nav-link">INICIAR SESION</a>
         </nav>
     </header>
 
-    <div class="cuerpo">
-        <div class="imagen">
-            <img src="../img/Beto's.png" alt="">
-        </div>
-
-        <div class="titulo">
-            <h2>Beto's</h2>
-        </div>
-
-        <div class="descripcion">
-            <h2>Ingredientes</h2>
-            <p>PEPINO, LECHUGA, CEBOLLA, 2 CARNES DE 160GR, 4 CAPAS DE QUESO CHEDDAR.</p>
-            <h2>Aderezos</h2>
-            <p>SALSA BIC MAC</p>
-            <h2>$4.000,00</h2>
-        </div>
-        
-        <div class="agregado-carrito">
-            <a href="../Carrito/index.html">AGREGAR AL CARRITO</a>
+    <!-- Overlay y Login-->
+    <div class="overlay">
+        <div id="contenedor-login">
+            <h1>actualizacion de datos</h1>
+            <form>
+                
+                <div class="nombre-usuario">
+                    <label>Nombre de Usuario
+                        <input type="text" placeholder="Ingrese nombre de usuario" required>
+                    </label>
+                </div>
+                <div class="contraseña-usuario">
+                    <label>Contraseña
+                        <input type="password" placeholder="Ingrese contraseña nueva" required>
+                    </label>
+                </div>
+                <div class="ingresar">
+                    <input type="submit" value="Ingresar">
+                </div>
+                <div class="iniciar-sesion">
+                    ¿Desea Iniciar Sesion? <a href="iniciarSesion.html"> Iniciar Sesion</a>
+                </div>
+            </form>
         </div>
     </div>
 
-    <div class="otros-productos">
-        <div class="subtitulo">
-            <h2>OTROS PRODUCTOS</h2>
-        </div>
-        <div class="linea"></div>
+
+    <!-- Imagen de fondo -->
+    <div class="imagen-fondo" id="inicio">
+        <img class="fondo" src="../img/fondo.png" alt="imagen de fondo">
     </div>
 
-    <iframe class="listado" src="listado.html" frameborder="0"></iframe>
 
+    <!-- Final de Presentacion -->
+    <div class="fin-presentacion"></div>
+
+    <!-- Pie de pagina -->
     <footer class="pie-de-pagina" id="contactos">
         <div class="grupo-1">
             <div class="caja">

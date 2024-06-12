@@ -271,6 +271,11 @@ aside button{
 .grupo-2 small{
     font-size: 15px;
 }
+@media screen and (max-width:1010px) {
+    header{
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width: 830px){
     header{
@@ -422,4 +427,42 @@ aside button{
         height: 35px;
         line-height: 35px;
     }
+}
+@media screen and (max-width: 510px){
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo-img {
+        height: 60px;
+    }
+
+    .container-burger1706 h2 {
+        font-size: 25px;
+    }
+
+    .container-burger1706 h4 {
+        font-size: 11px;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        width: 70%;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 8px 0;
+        
+    }
+
 }
