@@ -71,6 +71,19 @@ a{
     margin-left: 20px;
 }
 
+#menu{
+    display: none;
+}
+
+.menu-icon{
+    width: 30px;
+}
+
+label[for="menu"]{
+    cursor: pointer;
+    display: none;
+}
+
 nav a{
     font-weight: 600;
     padding-right: 60px;
@@ -195,6 +208,7 @@ aside button{
     padding: 3px;
 }
 
+/* ############### <!-- Final de Presentacion --> ############### */
 .fin-presentacion{
     background-color: black;
     background-image: url(../img/meta.png);
@@ -205,6 +219,7 @@ aside button{
     margin-top: 30px;
 }
 
+/* ############### <!-- Pie de pagina --> ############### */
 .pie-de-pagina{
     bottom: 0%;
     width: auto;
@@ -213,10 +228,10 @@ aside button{
 
 .grupo-1{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
     z-index: 1;
@@ -242,6 +257,17 @@ aside button{
     margin-bottom: 10px;
 }
 
+#escribinos-link {
+    background-color: #0d200d;
+    text-decoration: none;
+    width: 200px;
+    font-size: 18px;
+    transition: all 300ms ease;
+    line-height: 45px;
+    text-align: center;
+    font-weight: bold;
+}
+
 .red-social a{
     display: flex; /* Que se pongan en linea pero que mantengan su propiedad block */
     text-decoration: none;
@@ -257,7 +283,7 @@ aside button{
     transition: all 300ms ease;
 }
 
-.red-social a:hover{
+.red-social a:hover, #escribinos-link:hover{
     color: aqua;
 }
 
@@ -271,17 +297,25 @@ aside button{
 .grupo-2 small{
     font-size: 15px;
 }
-@media screen and (max-width:1010px) {
+
+/* ############### <!-- Media Query (1010px) --> ############### */
+@media screen and (max-width: 1010px){
     header{
         flex-direction: column;
+        padding: 5px;
+    }
+
+    nav{
+        padding: 10px 0px;
+        padding-left: 60px;
+    }
+
+    .columnas{
+        margin-top: 160px;
     }
 }
 
 @media screen and (max-width: 830px){
-    header{
-        flex-direction: column;
-    }
-
     .container-burger1706{
         height: 100px;
         grid-template-rows: 30% 90%;
@@ -292,7 +326,7 @@ aside button{
     }
 
     .columnas{
-        margin-top: 160px;
+        margin-top: 155px;
         height: 60px;
         width: auto;
     }
@@ -365,13 +399,111 @@ aside button{
     }
 }
 
-@media screen and (max-width: 635px){
+/* ############### <!-- Media Query (768px) --> ############### */
+@media screen and (max-width: 768px){
+    .logo-img{
+        height: 80px;
+        margin-left: 0px;
+    }
+
+    .container-burger1706{
+        height: 80px;
+        grid-template-rows: 30% 90%;
+    }
+
+    .container-burger1706 h2{
+        font-weight: 800;
+        font-size: 40px;
+    }
+
+    .container-burger1706 h4{
+        font-size: 15px;   
+    }
+
     nav{
-        display: flex;
+        padding: 10px 0px;
+        padding-left: 60px;
+    }
+
+    .nav-link{
+        font-size: 12px;
     }
 
     .columnas{
-        margin-top: 0%;
+        margin-top: 135px;
+    }
+}
+
+/* ############### <!-- Media Query (635px) --> ############### */
+@media screen and (max-width: 635px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo{
+        margin-left: 10px;
+    }
+
+    nav{
+        position: absolute;
+        top: 84%;
+        left: 0;
+        display: none;
+        background-image: url(../img/fondo-header.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        padding: 0px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-burger1706{
+        height: 80px;
+        grid-template-rows: 25% 90%;
+        margin-left: 0;
+    }
+
+    .container-burger1706 h2{
+        font-weight: 800;
+        font-size: 35px;
+    }
+
+    .container-burger1706 h4{
+        font-size: 14px;   
+    }
+
+    label[for="menu"]{
+        display: initial;
+        margin-right: 20px;
+    }
+
+    #menu:checked ~ nav{
+        display: flex;
+    }
+
+    .nav-link{
+        font-size: 9px;
+        padding-right: 40px;
+        text-align: center;
+        padding: 4px;
+    }
+
+    .columnas{
+        margin-top: 120px;
+    }
+
+    .articulos{
+        margin-top: 120px;
+    }
+}
+
+/* ############### <!-- Media Query (480px) --> ############### */
+@media screen and (max-width: 480px){
+    .logo-img{
+        height: 60px;
+        margin-left: 0px;
     }
 
     .container-burger1706{
@@ -388,9 +520,8 @@ aside button{
         font-size: 11px;   
     }
 
-    .logo-img{
-        height: 60px;
-        margin-left: 0px;
+    .menu-icon{
+        width: 25px;
     }
 
     .fin-presentacion{
@@ -427,42 +558,4 @@ aside button{
         height: 35px;
         line-height: 35px;
     }
-}
-@media screen and (max-width: 510px){
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-    }
-
-    .logo {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .logo-img {
-        height: 60px;
-    }
-
-    .container-burger1706 h2 {
-        font-size: 25px;
-    }
-
-    .container-burger1706 h4 {
-        font-size: 11px;
-    }
-
-    nav {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto;
-        width: 70%;
-    }
-
-    nav a {
-        text-align: center;
-        padding: 8px 0;
-        
-    }
-
 }

@@ -36,7 +36,29 @@ a{
     color: white;
 }
 
+.container-burger1706{
+    display: grid;
+    height: 110px;
+    margin-left: 20px;
+    grid-template-rows: 18% 90%; /* Define el tamaño y la distribucion de las filas en un grid (1era fila ocupara el 18% de la altura y la 2da el 90%)*/
+}
 
+.container-burger1706 h2{
+    order: 2; /* Controla el orden de aparicion de elementos dentro de un contenedor grid o flexbox (Este saldra segundo) */
+    text-align: end;
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    margin: 0;
+}
+
+.container-burger1706 h4{
+    order: 1; /* Controla el orden de aparicion de elementos dentro de un contenedor grid o flexbox (Este saldra primero) */
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    text-align: end;
+    color: #E9D331;
+}
 
 .logo{
     display: flex;
@@ -47,6 +69,19 @@ a{
     height: 100px;
     margin-right: 20px;
     margin-left: 20px;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icon{
+    width: 30px;
+}
+
+label[for="menu"]{
+    cursor: pointer;
+    display: none;
 }
 
 nav a{
@@ -64,13 +99,10 @@ nav a:hover{
     margin-top: 100px;
 }
 
-
-
-
 /* ############### <!-- Final de Presentacion --> ############### */
 .fin-presentacion{
     background-color: black;
-    background-image: url(img/meta.png);
+    background-image: url(../img/meta.png);
     background-repeat: repeat;
     background-size: contain;
     width: 100%;
@@ -148,7 +180,7 @@ nav a:hover{
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.8); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,13 +190,14 @@ nav a:hover{
 #contenedor-login {
     background-color: #000000;
     border: 2px solid #ffcc00;
-    border-radius: 10px;
+    border-radius: 30px;
     max-width: 600px;
     padding: 20px;
     box-shadow: 0 0 10px rgb(233, 218, 1);
     text-align: center;
     width: 60%;
-    height: 50%;    
+    margin-top:20px ;
+    /* height: 50%;    */
 }
 
 #contenedor-login h1 {
@@ -233,24 +266,64 @@ nav a:hover{
     text-shadow: 0px 0px 20px rgba(255, 255, 0, 1);
 }
 
-@media screen and (max-width: 910px)
-{
+/* ############### <!-- Media Query (1010px) --> ############### */
+@media screen and (max-width: 1010px){
     header{
         flex-direction: column;
+        padding: 5px;
     }
+
+    nav{
+        padding: 10px 0px;
+        padding-left: 60px;
+    }
+    #contenedor-login {
+        height: auto;
+        width: 50%;
+    }
+    #contenedor-login h1 {
+        font-size: 1.4em;  
+    }
+
+    #contenedor-login label {
+        font-size: 1.05em;
+    }
+
+
+    #contenedor-login input[type="submit"] {
+        padding: 5px 10px;
+        font-size: 1em;
+    }
+
+    #contenedor-login .olvido-contraseña,
+    #contenedor-login .registrarse,
+    #contenedor-login .iniciar-sesion {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    
 }
 
 /* ############### <!-- Media Query (768px) --> ############### */
 @media screen and (max-width: 768px){
-    header{
-        flex-direction: column;
-    }
-
     .logo-img{
         height: 80px;
         margin-left: 0px;
     }
 
+    .container-burger1706{
+        height: 80px;
+        grid-template-rows: 30% 90%;
+    }
+
+    .container-burger1706 h2{
+        font-weight: 800;
+        font-size: 40px;
+    }
+
+    .container-burger1706 h4{
+        font-size: 15px;   
+    }
    
     nav{
         padding: 10px 0px;
@@ -260,8 +333,6 @@ nav a:hover{
     .nav-link{
         font-size: 12px;
     }
-
-    
 
     .fin-presentacion{
         height: 30px;
@@ -281,60 +352,85 @@ nav a:hover{
         font-size: 12px;
         width: 150px;
     }
-
-    #contenedor-login {
-        width: 80%;
-        height: auto;
-        padding: 15px;
-    }
-
     #contenedor-login h1 {
-        font-size: 1.5em;
-        margin-bottom: 25px;
+        font-size: 1.35em;  
     }
 
     #contenedor-login label {
         font-size: 1em;
     }
 
-    #contenedor-login input[type="text"],
-    #contenedor-login input[type="password"] {
-        padding: 8px;
-        margin: 5px 0px 30px 0px;
-    }
 
     #contenedor-login input[type="submit"] {
-        padding: 8px 15px;
+        padding: 5px 10px;
         font-size: 0.9em;
     }
 
     #contenedor-login .olvido-contraseña,
-    #contenedor-login .registrarse
-    #contenedor-login .iniciar-sesion{
+    #contenedor-login .registrarse,
+    #contenedor-login .iniciar-sesion {
         font-size: 0.9em;
+        margin-bottom: 20px;
     }
-}
+    
 
+}
 
 /* ############### <!-- Media Query (653px) --> ############### */
 @media screen and (max-width: 653px){
-    nav{
-        padding: 10px 0px;
-        padding-left: 20px;
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        margin-left: 10px;
     }
 
-    .logo-img{
-        height: 60px;
-        margin-left: 0px;
+    nav{
+        position: absolute;
+        top: 84%;
+        left: 0;
+        display: none;
+        background-image: url(../img/fondo-header.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        padding: 0px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-burger1706{
+        height: 80px;
+        grid-template-rows: 25% 90%;
+        margin-left: 0;
+    }
+
+    .container-burger1706 h2{
+        font-weight: 800;
+        font-size: 35px;
+    }
+
+    .container-burger1706 h4{
+        font-size: 14px;   
+    }
+
+    label[for="menu"]{
+        display: initial;
+        margin-right: 20px;
+    }
+
+    #menu:checked ~ nav{
+        display: flex;
     }
 
     .nav-link{
-        font-size: 10px;
+        font-size: 9px;
         padding-right: 40px;
+        text-align: center;
+        padding: 4px;
     }
-
-  
-
    
     .fin-presentacion{
         height: 15px;
@@ -370,90 +466,19 @@ nav a:hover{
         height: 35px;
         line-height: 35px;
     }
-
-
     #contenedor-login {
-        width: 90%;
-        height: auto;
-        padding: 10px;
-    }
+        margin-top: 35px;
 
+    }
     #contenedor-login h1 {
         font-size: 1.2em;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
 
     #contenedor-login label {
         font-size: 0.9em;
     }
 
-    #contenedor-login input[type="text"],
-    #contenedor-login input[type="password"] {
-        padding: 5px;
-        margin: 5px 0px 20px 0px;
-    }
-
-    #contenedor-login input[type="submit"] {
-        padding: 5px 10px;
-        font-size: 0.8em;
-    }
-
-    #contenedor-login .olvido-contraseña,
-    #contenedor-login .registrarse
-    #contenedor-login .iniciar-sesion{
-        font-size: 0.8em;
-    }
-    
-}
-@media screen and (max-width: 466px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-    }
-
-    .logo {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .logo-img {
-        height: 55px;
-    }
-
-    nav {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto;
-        width: 100%;
-    }
-
-    nav a {
-        text-align: center;
-        padding: 5px 0;
-    }
-
-    #contenedor-login {
-        width: 90%;
-        height: auto;
-        padding: 10px;
-        margin-top: 130px; 
-    }
-
-    #contenedor-login h1 {
-        font-size: 1.2em;
-        margin-bottom: 20px;
-    }
-
-    #contenedor-login label {
-        font-size: 0.9em;
-    }
-
-    #contenedor-login input[type="text"],
-    #contenedor-login input[type="password"] {
-        padding: 5px;
-        margin: 5px 0px 20px 0px;
-    }
 
     #contenedor-login input[type="submit"] {
         padding: 5px 10px;
@@ -464,5 +489,72 @@ nav a:hover{
     #contenedor-login .registrarse,
     #contenedor-login .iniciar-sesion {
         font-size: 0.8em;
+        margin-bottom: 20px;
     }
+
+    
+}
+@media screen and (max-width: 480px) {
+    .logo-img{
+        height: 60px;
+        margin-left: 0px;
+    }
+
+    .container-burger1706{
+        height: 60px;
+        grid-template-rows: 30% 90%;
+    }
+
+    .container-burger1706 h2{
+        font-weight: 800;
+        font-size: 25px;
+    }
+
+    .container-burger1706 h4{
+        font-size: 11px;   
+    }
+
+    .menu-icon{
+        width: 25px;
+    }
+
+   
+}
+@media screen and (max-height: 750px) 
+{
+    #contenedor-login {
+        margin-top:120px ;
+        height: 50%;
+        padding: 15px;
+    }
+
+    #contenedor-login h1 {
+        font-size: 1.2em;
+        margin-bottom: 35px;
+    }
+
+    #contenedor-login label {
+        font-size: 0.7em;
+    }
+
+    #contenedor-login input[type="text"],
+    #contenedor-login input[type="password"] {
+        padding: 8px;
+        margin: 5px 0px 30px 0px;
+    }
+
+
+    #contenedor-login input[type="submit"] {
+        padding: 5px 10px;
+        font-size: 0.7em;
+    }
+
+    #contenedor-login .olvido-contraseña,
+    #contenedor-login .registrarse,
+    #contenedor-login .iniciar-sesion {
+        font-size: 0.7em;
+        margin-bottom: 20px;
+    }
+
+
 }
