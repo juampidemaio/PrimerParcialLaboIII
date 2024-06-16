@@ -74,6 +74,19 @@ a {
   margin-right: 20px;
   margin-left: 20px;
 }
+#menu{
+  display: none;
+}
+
+.menu-icon{
+  width: 30px;
+}
+
+label[for="menu"]{
+  cursor: pointer;
+  display: none;
+}
+
 
 nav a {
   font-weight: 600; /* Negritas */
@@ -255,6 +268,21 @@ button {
 }
 
 /*                RESPONSIVE                    */
+/* ############### <!-- Media Query (1010px) --> ############### */
+@media screen and (max-width: 1010px){
+  header{
+      flex-direction: column;
+      padding: 5px;
+  }
+
+  nav{
+      padding: 10px 0px;
+      padding-left: 60px;
+  }
+  
+  
+}
+
 
 @media screen and (max-width: 768px) {
   header {
@@ -403,4 +431,96 @@ button {
     height: 35px;
     line-height: 35px;
   }
+}
+/* ############### <!-- Media Query (653px) --> ############### */
+@media screen and (max-width: 653px){
+  header{
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  
+  .logo{
+      margin-left: 10px;
+  }
+
+  nav{
+      position: absolute;
+      top: 84%;
+      left: 0;
+      display: none;
+      background-image: url(../img/fondo-header.png);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+      padding: 0px;
+      flex-direction: column;
+      width: 100%;
+  }
+
+
+  label[for="menu"]{
+      display: initial;
+      margin-right: 20px;
+  }
+
+  #menu:checked ~ nav{
+      display: flex;
+  }
+
+  .nav-link{
+      font-size: 9px;
+      padding-right: 40px;
+      text-align: center;
+      padding: 4px;
+  }
+ 
+ 
+  .grupo-1{
+      width: 70%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      padding: 15px 0px;
+  }
+
+  .grupo-2{
+     
+      grid-gap: 30px;
+      padding: 35px 0px;
+  }
+
+  .caja img{
+      width: 80px;
+  }
+
+  .caja h2{
+      margin-bottom: 10px;
+      font-size: 13px;
+  }
+
+  .caja p{
+      font-size: 12px;
+  }
+
+  .grupo-2 small{
+      font-size: 12px;
+  }
+
+  .red-social a{
+      font-size: 10px;
+      width: 120px;
+      height: 35px;
+      line-height: 35px;
+  }
+  .escribinos-container {
+    margin: 50px auto;
+    margin-top: 220px;
+    padding: 60px 50px;
+    width: 60%;
+  }
+  .escribinos-container h2{
+    font-size: 25px;
+  }
+
+  
+  
 }

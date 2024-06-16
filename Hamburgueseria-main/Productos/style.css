@@ -271,7 +271,7 @@ nav a:hover{
     font-size: 15px;
 }
 
-/* ############### <!-- Media Query (1010px) --> ############### */
+/* ############### <!-- Media Query (1100px) --> ############### */
 @media screen and (max-width: 1100px) {
     .titulo{
         font-size: 20px;
@@ -517,18 +517,6 @@ nav a:hover{
     .linea{
         border-top: 3px solid #fff;
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
     .fin-presentacion{
         height: 15px;

@@ -204,11 +204,13 @@ nav a:hover{
     letter-spacing: 2.5px;
     color: #ffcc00;
     margin-bottom: 35px;
+    font-family: "Big Shoulders Stencil Text", sans-serif;
 }
 
 #contenedor-login label {
     font-size: 1.2em;
     color: #ffffff;
+    font-family: "Oswald", sans-serif;
 }
 
 #contenedor-login input[type="text"],
@@ -260,6 +262,7 @@ nav a:hover{
     color: #ffcc00;
     text-decoration: none;
     font-weight: bold;
+    font-family: "Oswald", sans-serif;
 }
 
 #contenedor-login .registrarse a,#contenedor-login .iniciar-sesion a,#contenedor-login .olvido-contraseña a:hover{
