@@ -195,7 +195,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    
 }
 
 #contenedor-login {
@@ -371,7 +371,7 @@ nav a:hover{
     .red-social a{
         font-size: 12px;
         width: 150px;
-    }
+    }   
 
    
     .caja img{
@@ -480,8 +480,8 @@ nav a:hover{
 
     .grupo-2{
        
-        grid-gap: 30px;
-        padding: 35px 0px;
+        grid-gap: 50px;
+        padding: 70px 0px;
     }
 
     .caja img{
@@ -570,7 +570,6 @@ nav a:hover{
     }
    
 
-   
 
     
    
