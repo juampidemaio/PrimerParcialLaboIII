@@ -1,0 +1,390 @@
+
+
+/* ############### <!-- Imagen de fondo --> ############### */
+.fondo{
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+/*--------------------------------#LOGIN---------------------------*/
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#contenedor-login {
+    background-color: #000000;
+    border: 2px solid #e9d331;
+    border-radius: 30px;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(233, 218, 1);
+    text-align: center;
+    width: 60%;
+    margin-top:20px ;
+    /* height: 50%;    */
+}
+
+#contenedor-login h1 {
+    letter-spacing: 2.5px;
+    color: #e9d331;
+    margin-bottom: 35px;
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+}
+
+#contenedor-login label {
+    font-size: 1.2em;
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+}
+
+#contenedor-login input[type="text"],
+#contenedor-login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin:5px 0px 50px 0px ;
+    background-color: #000000;
+    color: #e9d331;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contenedor-login input[type="text"]:hover,
+#contenedor-login input[type="password"]:hover {
+    box-shadow: 0px 0px 10px 0px rgb(245, 246, 240);
+}
+
+#contenedor-login input[type="submit"] {
+    background-color: #e9d331;
+    border: none;
+    letter-spacing: 1.5px;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contenedor-login input[type="submit"]:hover {
+    background-color: #ffdb4d;
+    box-shadow: 0px 4px 20px rgb(191, 196, 44);
+}
+
+#contenedor-login .olvido-contraseña {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+#contenedor-login .registrarse, #contenedor-login .iniciar-sesion  {
+    margin-top: 25px;
+    color: #ffffff;
+}
+
+#contenedor-login .registrarse a, #contenedor-login .iniciar-sesion a, #contenedor-login .olvido-contraseña a{
+    color: #e9d331;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+}
+
+#contenedor-login .registrarse a,#contenedor-login .iniciar-sesion a,#contenedor-login .olvido-contraseña a:hover{
+    text-shadow: 0px 0px 20px rgba(255, 255, 0, 0.507);
+}
+
+/* ############### <!-- Media Query (1010px) --> ############### */
+@media screen and (max-width: 1010px){
+    header{
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    nav{
+        padding: 10px 0px;
+        padding-left: 60px;
+    }
+    #contenedor-login {
+        height: auto;
+        width: 50%;
+    }
+    #contenedor-login h1 {
+        font-size: 1.4em;  
+    }
+
+    #contenedor-login label {
+        font-size: 1.05em;
+    }
+
+
+    #contenedor-login input[type="submit"] {
+        padding: 5px 10px;
+        font-size: 1em;
+    }
+
+    #contenedor-login .olvido-contraseña,
+    #contenedor-login .registrarse,
+    #contenedor-login .iniciar-sesion {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    
+}
+/* ############### <!-- Media Query (768px) --> ############### */
+@media screen and (max-width: 768px){
+    .logo-img{
+        height: 80px;
+        margin-left: 0px;
+    }
+
+    .container-burger1706{
+        height: 80px;
+        grid-template-rows: 30% 90%;
+    }
+
+    .container-burger1706 h2{
+        font-weight: 800;
+        font-size: 40px;
+    }
+
+    .container-burger1706 h4{
+        font-size: 15px;   
+    }
+   
+    nav{
+        padding: 10px 0px;
+        padding-left: 60px;
+    }
+
+    .nav-link{
+        font-size: 12px;
+    }
+
+    .fin-presentacion{
+        height: 30px;
+    }
+
+   
+    .caja img{
+        width: 100px;
+    }
+
+    .caja h2{
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .red-social a{
+        font-size: 12px;
+        width: 150px;
+    }
+
+    #contenedor-login h1 {
+        font-size: 1.35em;
+    }
+
+    #contenedor-login label {
+        font-size: 1em;
+    }
+
+    #contenedor-login input[type="submit"] {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+
+    #contenedor-login .olvido-contraseña,
+    #contenedor-login .registrarse
+    #contenedor-login .iniciar-sesion{
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+}
+
+/* ############### <!-- Media Query (653px) --> ############### */
+@media screen and (max-width: 653px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        margin-left: 10px;
+    }
+
+    nav{
+        position: absolute;
+        top: 84%;
+        left: 0;
+        display: none;
+        background-image: url(../img/fondo-header.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        padding: 0px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-burger1706{
+        height: 80px;
+        grid-template-rows: 25% 90%;
+        margin-left: 0;
+    }
+
+    .container-burger1706 h2{
+        font-weight: 800;
+        font-size: 35px;
+    }
+
+    .container-burger1706 h4{
+        font-size: 14px;   
+    }
+
+    label[for="menu"]{
+        display: initial;
+        margin-right: 20px;
+    }
+
+    #menu:checked ~ nav{
+        display: flex;
+    }
+
+    .nav-link{
+        font-size: 9px;
+        padding-right: 40px;
+        text-align: center;
+        padding: 4px;
+    }
+   
+    .fin-presentacion{
+        height: 15px;
+    }
+
+    .grupo-1{
+        width: 70%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        padding: 15px 0px;
+    }
+
+    .caja img{
+        width: 80px;
+    }
+
+    .caja h2{
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .caja p{
+        font-size: 12px;
+    }
+
+    .grupo-2 small{
+        font-size: 10px;
+    }
+
+    .red-social a{
+        font-size: 10px;
+        width: 120px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    #contenedor-login {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    #contenedor-login h1 {
+        font-size: 1.2em;
+        margin-bottom: 35px;
+    }
+
+    #contenedor-login label {
+        font-size: 0.9em;
+    }
+
+    #contenedor-login input[type="submit"] {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+
+    #contenedor-login .olvido-contraseña,
+    #contenedor-login .registrarse
+    #contenedor-login .iniciar-sesion{
+        font-size: 0.8em;
+        margin-bottom: 20px;
+    }
+    
+}
+
+/* ############### <!-- Media Query (480px) --> ############### */
+@media screen and (max-width: 480px) {
+    .logo-img{
+        height: 60px;
+        margin-left: 0px;
+    }
+
+    .container-burger1706{
+        height: 60px;
+        grid-template-rows: 30% 90%;
+    }
+
+    .container-burger1706 h2{
+        font-weight: 800;
+        font-size: 25px;
+    }
+
+    .container-burger1706 h4{
+        font-size: 11px;   
+    }
+
+    .menu-icon{
+        width: 25px;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    #contenedor-login {
+        margin-top:120px ;
+        height: 50%;
+        padding: 15px;
+    }
+
+    #contenedor-login h1 {
+        font-size: 1.2em;
+        margin-bottom: 35px;
+    }
+
+    #contenedor-login label {
+        font-size: 0.7em;
+    }
+
+    #contenedor-login input[type="text"],
+    #contenedor-login input[type="password"] {
+        padding: 8px;
+        margin: 5px 0px 30px 0px;
+    }
+
+    #contenedor-login input[type="submit"] {
+        padding: 5px 10px;
+        font-size: 0.7em;
+    }
+
+    #contenedor-login .olvido-contraseña,
+    #contenedor-login .registrarse,
+    #contenedor-login .iniciar-sesion {
+        font-size: 0.7em;
+        margin-bottom: 20px;
+    }
+}

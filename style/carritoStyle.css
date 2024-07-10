@@ -1,0 +1,387 @@
+.fondo {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.resumenCompra {
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    display: block;
+    height: 230px;
+    width: 230px;
+    border: 4px black solid;
+    margin-left: 81.5%;
+    top: 210px;
+    color: black;
+    z-index: 1;
+}
+
+.resumenCompra h1 {
+    display: flex;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.resumenCompra ul {
+    list-style-type: none;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.resumenCompra ul li {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+aside button {
+    margin-top: 10%;
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 110px;
+    height: 50px;
+    font-size: 15px;
+    left: 63px;
+}
+
+aside button:hover {
+    cursor: pointer;
+}
+
+.contador {
+    width: 70px;
+    height: 50px;
+    text-align: center;
+}
+
+.imgTacho {
+    width: 100%;
+}
+
+.btn-borrar {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-borrar:hover {
+    cursor: pointer;
+    border: 3px black solid;
+    padding: 3px;
+}
+
+.articulos {
+    display: block;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    width: 90%;
+    margin-top: 100px;
+    height: auto;
+    color: black;
+    min-height: 400px;
+}
+
+.columnas {
+    width: 90%;
+    height: 80px;
+    display: grid; /* Utiliza Grid para organizar los elementos en columnas */
+    grid-template-columns: repeat(5, 1fr); /* Crea 5 columnas de igual ancho */
+    grid-column-gap: 4%;
+    border-bottom: 3px black solid;
+    margin-top: 130px;
+}
+
+.columnas p {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+}
+
+.compraUnidad {
+    width: 90%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 4%;
+    color: black;
+    padding-bottom: 5px;
+    /* Centra los elementos verticalmente */
+}
+
+.compraUnidad p {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+}
+
+.fotoHamburguesa {
+    height: 80px;
+}
+
+/* ############### <!-- Media Query (1010px) --> ############### */
+@media screen and (max-width: 1010px) {
+    header {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    nav {
+        padding: 10px 0px;
+        padding-left: 60px;
+    }
+
+    .columnas {
+        margin-top: 160px;
+    }
+    }
+
+    @media screen and (max-width: 830px) {
+    .container-burger1706 {
+        height: 100px;
+        grid-template-rows: 30% 90%;
+    }
+
+    .articulos {
+        margin: auto;
+    }
+
+    .columnas {
+        margin-top: 155px;
+        height: 60px;
+        width: auto;
+    }
+
+    .columnas p {
+        font-size: 15px;
+    }
+
+    .compraUnidad {
+        width: auto;
+    }
+
+    .container-burger1706 h2 {
+        font-weight: 800;
+        font-size: 40px;
+    }
+
+    .container-burger1706 h4 {
+        font-size: 15px;
+    }
+
+    .logo-img {
+        height: 80px;
+        margin-left: 0px;
+    }
+
+    nav {
+        padding: 10px 0px;
+        padding-left: 60px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .articulos {
+        margin-top: 130px;
+    }
+
+    .resumenCompra {
+        margin: auto; /* Elimina el margen izquierdo */
+        margin-bottom: 300px; /* Ajusta el margen superior */
+        margin-top: -150px;
+        position: relative; /* Vuelve a la posición relativa */
+    }
+
+    .fin-presentacion {
+        height: 30px;
+    }
+
+    .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .caja img {
+        width: 100px;
+    }
+
+    .caja h2 {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .red-social a {
+        font-size: 12px;
+        width: 150px;
+    }
+}
+
+/* ############### <!-- Media Query (768px) --> ############### */
+@media screen and (max-width: 768px) {
+    .logo-img {
+        height: 80px;
+        margin-left: 0px;
+    }
+
+    .container-burger1706 {
+        height: 80px;
+        grid-template-rows: 30% 90%;
+    }
+
+    .container-burger1706 h2 {
+        font-weight: 800;
+        font-size: 40px;
+    }
+
+    .container-burger1706 h4 {
+        font-size: 15px;
+    }
+
+    nav {
+        padding: 10px 0px;
+        padding-left: 60px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .columnas {
+        margin-top: 135px;
+    }
+}
+
+/* ############### <!-- Media Query (635px) --> ############### */
+@media screen and (max-width: 635px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    nav {
+        position: absolute;
+        top: 84%;
+        left: 0;
+        display: none;
+        background-image: url(../img/fondo-header.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        padding: 0px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-burger1706 {
+        height: 80px;
+        grid-template-rows: 25% 90%;
+        margin-left: 0;
+    }
+
+    .container-burger1706 h2 {
+        font-weight: 800;
+        font-size: 35px;
+    }
+
+    .container-burger1706 h4 {
+        font-size: 14px;
+    }
+
+    label[for="menu"] {
+        display: initial;
+        margin-right: 20px;
+    }
+
+    #menu:checked ~ nav {
+        display: flex;
+    }
+
+    .nav-link {
+        font-size: 9px;
+        padding-right: 40px;
+        text-align: center;
+        padding: 4px;
+    }
+
+    .columnas {
+        margin-top: 120px;
+    }
+
+    .articulos {
+        margin-top: 120px;
+    }
+}
+
+/* ############### <!-- Media Query (480px) --> ############### */
+@media screen and (max-width: 480px) {
+    .logo-img {
+        height: 60px;
+        margin-left: 0px;
+    }
+
+    .container-burger1706 {
+        height: 60px;
+        grid-template-rows: 30% 90%;
+    }
+
+    .container-burger1706 h2 {
+        font-weight: 800;
+        font-size: 25px;
+    }
+
+    .container-burger1706 h4 {
+        font-size: 11px;
+    }
+
+    .menu-icon {
+        width: 25px;
+    }
+
+    .fin-presentacion {
+        height: 15px;
+    }
+
+    .grupo-1 {
+        width: 70%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        padding: 15px 0px;
+    }
+
+    .caja img {
+        width: 80px;
+    }
+
+    .caja h2 {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .caja p {
+        font-size: 12px;
+    }
+
+    .grupo-2 small {
+        font-size: 10px;
+    }
+
+    .red-social a {
+        font-size: 10px;
+        width: 120px;
+        height: 35px;
+        line-height: 35px;
+    }
+}

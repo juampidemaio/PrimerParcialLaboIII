@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+/*body*/
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.productos{
+    font-family: "Bebas Neue";
+}
+
+.tituloProductos{
+    margin-left: 50px;
+    font-size: 2.5rem;
+}
+
+.contenedorBurgers{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    height: 1000px;
+}
+
+.burger {
+    position: absolute;
+    width: 350px;
+    height: 310px;
+    border-radius: 200px;
+    border-color: #DF5700;
+    border-width: 7px;
+    border-style: solid groove;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+/* Animacion */
+.back {
+    width: 350px;
+    height: 310px;
+    border-radius: 200px;
+    border-color: #DF5700;
+    background-color: #DF5700;
+    border-width: 7px;
+    border-style: solid groove;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: 1s;
+    text-align: center;
+}
+
+.back h1{
+    position: relative;
+    top: 20px;
+}
+
+.back h2{
+    font-size: 4rem;
+}
+
+.back a{
+    position: relative;
+    font-size: 2rem;
+}
+
+.contenedor{
+    margin: 0px 30px 250px;
+}
+
+.contenedor:hover img {
+    transform: rotateY(180deg);
+}
+
+.contenedor:hover .back {
+    transform: rotateY(360deg);
+}
+
+/**************/
+
+
+/*botones*/
+.btn{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    position: relative;
+    font-family: "Bebas Neue";
+}
+
+#link-argenta, #link-betoss, #link-cheddarBoom{
+    position: relative;
+    top: -650px;
+}
+
+#link-doblePanceta, #link-martins, #link-H1706{
+    position: relative;
+    top: -145px;
+}
+
+.btn a{
+    color: black;
+    font-size: 2rem;
+    background-color:#DF5700;
+    padding: 10px 40px;
+    width: 150px;
+    border-radius: 100px;
+    border-style: solid groove;
+    border-color:#DF5700;
+    text-align: center;
+}
+
+#link-argenta, #link-doblePanceta{
+    margin-right: 220px;
+    margin-left: 40px;
+}
+#link-cheddarBoom{
+    margin-left: 200px;
+    margin-right: 30px;
+}
+#link-betoss, #link-martins{
+    margin-left: -40px;
+}
+
+#link-H1706{
+    margin-left: 200px;
+}
+
+
+.btn a.doblePanceta{
+    font-size: 1.5rem;
+}
+
+#betoss, #doblePanceta, #H1706, #link-betoss, #link-doblePanceta, #link-H1706{
+    border-color:  #FF8A00;
+    background-color: #FF8A00;
+}
+/****************************/
+
+/*++++++++++++++++++++++++++++++++RESPONSIVE++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 1200px) {
+    .burger{
+        width: 290px;
+        height: 250px;
+        margin: 0px 40px;
+        border-radius: 120px;
+    }
+
+    .contenedorBurgers{
+        height: 800px;
+    }
+
+    .contenedor{
+        margin: 0px 0px 200px;
+    }
+    
+
+    .back{
+        width: 290px;
+        height: 250px;
+        margin: 0px 40px;
+        border-radius: 120px;
+    }
+
+    .back h2{
+        position: relative;
+        top: 10px;
+        font-size: 2.5rem;
+    }
+
+    .back a{
+        position: relative;
+        top: 30px;
+    }
+
+    #link-argenta, #link-doblePanceta{
+        margin-right: 200px;
+        margin-left: 55px;
+    }
+    #link-cheddarBoom{
+        margin-left: 150px;
+        margin-right: 60px;
+    }
+    #link-betoss, #link-martins{
+        margin-left: -60px;
+    }
+    
+    #link-H1706{
+        margin-left: 140px;
+    }
+    
+    #link-argenta, #link-betoss, #link-cheddarBoom{
+        position: relative;
+        top: -520px;
+    }
+    
+    #link-doblePanceta, #link-martins, #link-H1706{
+        position: relative;
+        top: -120px;
+    }
+    
+}
+
+@media screen and (max-width: 1100px) {
+    .burger{
+        margin: 0px 20px;
+    }
+
+    .back{
+        margin: 0px 20px;
+    }
+
+    #link-argenta, #link-doblePanceta{
+        margin-right: 110px;
+        margin-left: 50px;
+    }
+    #link-cheddarBoom{
+        margin-left: 110px;
+    }
+    #link-betoss, #link-martins{
+        margin-left: 0px;
+    }
+    
+    #link-H1706{
+        margin-left: 110px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .burger{
+        margin: 0px 10px;
+    }
+
+    .back{
+        margin: 0px 10px;
+    }
+
+    #link-argenta, #link-doblePanceta{
+        margin-right: 90px;
+        margin-left: 60px;
+    }
+    #link-cheddarBoom{
+        margin-left: 90px;
+    }
+    #link-betoss, #link-martins{
+        margin-left: 0px;
+    }
+    
+    #link-H1706{
+        margin-left: 90px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+    .contenedorBurgers{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        height: 1100px;
+    }
+
+    .btn{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    #link-argenta, #link-betoss{
+        position: relative;
+        top: -820px;
+    }
+
+    #link-cheddarBoom, #link-doblePanceta{
+        position: relative;
+        top: -420px;
+    }
+
+    #link-martins, #link-H1706{
+        position: relative;
+        top: -20px;
+    }
+
+    #link-argenta, #link-betoss, #link-doblePanceta, #link-H1706, #link-martins, #link-cheddarBoom{
+        margin: 0px;
+    }
+
+    #link-argenta, #link-cheddarBoom, #link-martins{
+        margin-right: 90px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+    .contenedorBurgers{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        height: 2400px;
+    }
+
+    .btn{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    #link-argenta, #link-betoss, #link-doblePanceta, #link-H1706, #link-martins, #link-cheddarBoom{
+        position: relative;
+        top: 0px;
+        margin: 0px;
+    }
+
+    #link-argenta{
+        position: relative;
+        top: -2120px;
+    }
+    #link-betoss{
+        position: relative;
+        top: -1720px;
+    }
+    #link-cheddarBoom{
+        position: relative;
+        top: -1320px;
+    }
+    #link-doblePanceta{
+        position: relative;
+        top: -920px;
+    }
+    #link-martins{
+        position: relative;
+        top: -520px;
+    }
+    #link-H1706{
+        position: relative;
+        top: -120px;
+    }
+}
