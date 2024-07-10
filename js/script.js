@@ -78,9 +78,21 @@ $(document).ready(function() {
         }
     }
 
+    
     // Llamar a AplicarMediaQuerys al cargar y redimensionar la ventana
     AplicarMediaQueries();
     $(window).resize(AplicarMediaQueries);
+    
+
+   
+
 });
-
-
+// Función para mostrar/ocultar el mapa
+function toggleMap(mapId) {
+    var map = document.getElementById(mapId);
+    if (map.style.display === "none") {
+        map.style.display = "block";
+    } else {
+        map.style.display = "none";
+    }
+}
