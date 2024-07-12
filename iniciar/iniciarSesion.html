@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
     <!-- Encabezado -->
     <header>
         <a href="../index.html" class="logo">
-            <img class="logo-img" src="../img/logo.png" alt="logo de la compañia">
+            <img class="logo-img" src="../img/logo.png" alt="logo de la compañía">
 
             <div class="container-burger1706">
                 <h2>burger</h2>
@@ -32,27 +32,27 @@
             <a href="../Productos/productos.html" class="nav-link">PRODUCTOS</a>
             <a href="../Carrito/index.html" class="nav-link">CARRITO</a>
             <a href="../Formulario_contacto/form-contacto.html" class="nav-link">CONTACTOS</a>
-            <a href="#" class="nav-link">INICIAR SESION</a>
+            <a href="#" class="nav-link">INICIAR SESIÓN</a>
         </nav>
     </header>
 
     <!-- Overlay y Login-->
     <div class="overlay">
         <div id="contenedor-login">
-            <h1>Inicio Sesión</h1>
-            <form>
+            <h1>Inicio de Sesión</h1>
+            <form id="formulario-inicio-sesion">
                 <div class="nombre-usuario">
                     <label>Nombre de Usuario
-                        <input type="text" placeholder="Ingrese nombre de usuario" required>
+                        <input type="text" id="nombreUsuario" placeholder="Ingrese nombre de usuario" required>
                     </label>
                 </div>
                 <div class="contraseña-usuario">
                     <label>Contraseña
-                        <input type="password" placeholder="Ingrese contraseña" required>
+                        <input type="password" id="contraseña" placeholder="Ingrese contraseña" required>
                     </label>
                 </div>
                 <div class="olvido-contraseña">
-                    <a href="recuperarCuenta.html">¿Olvido su contraseña?</a>
+                    <a href="recuperarCuenta.html">¿Olvidó su contraseña?</a>
                 </div>
                 <div class="ingresar">
                     <input type="submit" value="Ingresar">
@@ -64,15 +64,23 @@
         </div>
     </div>
 
-
     <!-- Imagen de fondo -->
+    
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-close" class="modal-close">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
     <div class="imagen-fondo" id="inicio">
         <img class="fondo" src="../img/fondo.png" alt="imagen de fondo">
     </div>
 
-
     <!-- Final de Presentacion -->
     <div class="fin-presentacion"></div>
+
     <!-- Pie de pagina -->
     <footer class="pie-de-pagina" id="contactos">
         <div class="grupo-1">
@@ -109,5 +117,7 @@
             <small>&copy; 2024 <b>Burger 1706</b> - Todos los Derechos Reservados</small>
         </div>
     </footer>
+
+    <script src="../js/inicioSesion.js"></script> 
 </body>
 </html>

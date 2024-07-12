@@ -87,6 +87,7 @@ $(document).ready(function() {
    
 
 });
+
 // Función para mostrar/ocultar el mapa
 function toggleMap(mapId) {
     var map = document.getElementById(mapId);

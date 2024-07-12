@@ -21,7 +21,7 @@
 
 #contenedor-login {
     background-color: #000000;
-    border: 2px solid #e9d331;
+    border: 2px solid #E9D331;
     border-radius: 30px;
     max-width: 600px;
     padding: 20px;
@@ -34,7 +34,7 @@
 
 #contenedor-login h1 {
     letter-spacing: 2.5px;
-    color: #e9d331;
+    color: #E9D331;
     margin-bottom: 35px;
     font-family: "Big Shoulders Stencil Text", sans-serif;
 }
@@ -51,7 +51,7 @@
     padding: 10px;
     margin:5px 0px 50px 0px ;
     background-color: #000000;
-    color: #e9d331;
+    color: #E9D331;
     border: none;
     border-bottom: 1px solid #cccccc;
     border-radius: 5px;
@@ -64,7 +64,7 @@
 }
 
 #contenedor-login input[type="submit"] {
-    background-color: #e9d331;
+    background-color: #E9D331;
     border: none;
     letter-spacing: 1.5px;
     color: #000000;
@@ -91,7 +91,7 @@
 }
 
 #contenedor-login .registrarse a, #contenedor-login .iniciar-sesion a, #contenedor-login .olvido-contraseña a{
-    color: #e9d331;
+    color: #E9D331;
     text-decoration: none;
     font-weight: bold;
     font-family: "Oswald", sans-serif;
@@ -99,6 +99,53 @@
 
 #contenedor-login .registrarse a,#contenedor-login .iniciar-sesion a,#contenedor-login .olvido-contraseña a:hover{
     text-shadow: 0px 0px 20px rgba(255, 255, 0, 0.507);
+}
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #E9D331;
+    padding: 2em;
+    border-radius: 5px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+#modal-message {
+    font-size: 1.2em;
+    font-family: "Oswald", sans-serif;
+    color: #0e0707;
+    text-shadow: #E9D331;
 }
 
 /* ############### <!-- Media Query (1010px) --> ############### */

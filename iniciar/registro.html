@@ -40,15 +40,15 @@
     <div class="overlay">
         <div id="contenedor-login">           
             <h1>Crear Cuenta</h1>
-            <form>
+            <form id="formulario-registro">
                 <div class="nombre-usuario">
                     <label>Nombre de Usuario
-                        <input type="text" placeholder="Ingrese nombre de usuario nuevo" required>
+                        <input type="text" id="nombreUsuario" placeholder="Ingrese nombre de usuario nuevo" required>
                     </label>
                 </div>
                 <div class="contraseña-usuario">
                     <label>Contraseña
-                        <input type="password" placeholder="Ingrese contraseña nueva" required>
+                        <input type="password" id="contraseña" placeholder="Ingrese contraseña nueva" required>
                     </label>
                 </div>
                 <div class="ingresar">
@@ -64,6 +64,14 @@
     <!-- Imagen de fondo -->
     <div class="imagen-fondo" id="inicio">
         <img class="fondo" src="../img/fondo.png" alt="imagen de fondo">
+    </div>
+
+     <!-- Modal -->
+     <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-close" class="modal-close">&times;</span>
+            <p id="modal-message"></p>
+        </div>
     </div>
 
 
@@ -106,5 +114,6 @@
             <small>&copy; 2024 <b>Burger 1706</b> - Todos los Derechos Reservados</small>
         </div>
     </footer>
+    <script src="../js/registro.js"></script> 
 </body>
 </html>
